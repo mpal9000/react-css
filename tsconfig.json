@@ -1,0 +1,60 @@
+{
+  "compilerOptions": {
+    "allowUnreachableCode": false,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "incremental": true,
+    "jsx": "react-jsx",
+    "lib": ["ES2018", "DOM"],
+    "module": "ES2015",
+    "moduleResolution": "Node",
+    "newLine": "lf",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "./dist/",
+    "plugins": [
+      {
+        "name": "@manuth/typescript-eslint-plugin",
+        "allowInlineConfig": true,
+        "alwaysShowRuleFailuresAsWarnings": false,
+        "configFile": "./.eslintrc.json",
+        "ignoreJavaScript": true,
+        "ignoreTypeScript": false,
+        "logLevel": "none",
+        "packageManager": "npm",
+        "reportUnusedDisableDirectives": true,
+        "suppressConfigNotFoundError": false,
+        "suppressDeprecationWarnings": false,
+        "suppressWhileTypeErrorsPresent": false,
+        "useEslintrc": true
+      },
+      {
+        "name": "ts-plugin-type-coverage",
+        "strict": true,
+        "ignoreCatch": true
+      }
+    ],
+    "preserveSymlinks": true,
+    "preserveWatchOutput": true,
+    "rootDir": "./src/",
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES2018",
+    "tsBuildInfoFile": "./.cache/tsc/tsbuildinfo",
+    "types": [],
+    "useDefineForClassFields": true
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["**/.*"],
+  "typeAcquisition": {
+    "disableFilenameBasedTypeAcquisition": true,
+    "enable": false
+  }
+}
